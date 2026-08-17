@@ -1,0 +1,8 @@
+settings:
+  default-rank: Default
+  protected-rank: Owner
+  tab-format: "{prefix} &f{player}"
+  nametag-format: "{prefix} &f{player}"
+  chat-format: "{prefix} &f{player}&7: &r{message}"
+  messages:
+    prefix: "&8[&6RankSystem&8] "

@@ -1,0 +1,53 @@
+ranks:
+  Default:
+    priority: 0
+    prefix: "&7[Default]"
+    suffix: ""
+    permissions:
+      - "essentials.spawn"
+
+  VIP:
+    priority: 10
+    prefix: "&6[VIP]"
+    suffix: ""
+    inherits: []
+    permissions:
+      - "essentials.sethome"
+      - "essentials.home"
+
+  Helper:
+    priority: 30
+    prefix: "&b[Helper]"
+    suffix: ""
+    inherits: []
+    permissions:
+      - "essentials.kick"
+
+  Moderator:
+    priority: 50
+    prefix: "&2[Moderator]"
+    suffix: ""
+    inherits:
+      - Helper
+    permissions:
+      - "essentials.mute"
+      - "essentials.tempmute"
+
+  Admin:
+    priority: 80
+    prefix: "&c[Admin]"
+    suffix: ""
+    inherits:
+      - Moderator
+    permissions:
+      - "essentials.ban"
+      - "essentials.tp"
+
+  Owner:
+    priority: 100
+    prefix: "&4[Owner]"
+    suffix: ""
+    inherits:
+      - Admin
+    permissions:
+      - "*"
